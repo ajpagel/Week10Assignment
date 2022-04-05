@@ -13,7 +13,7 @@ document.getElementById('add').addEventListener('click', () => {
     row.insertCell(1).innerHTML = `${createdDate.getFullYear()}-${createdDate.getMonth() + 1}-${createdDate.getDate()}`; //date created column
     row.insertCell(2).innerHTML = document.getElementById('new-end-date').value;//completed by date
     let actions = row.insertCell(3);
-    actions.appendChild(createFinishedButton(id++));
+    actions.appendChild(createCompletedButton(id++));
     document.getElementById('new-task').value = '';
 });
 
