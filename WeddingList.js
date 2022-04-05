@@ -27,8 +27,8 @@ function createCompletedButton(id) {
     btn.innerHTML = "Complete"
     btn.onclick = () => {
         console.log(`Row with item-${id} is complete!`);
-        let elementtoDelete = document.getAnimations(`item-${id}`);
-        elementtoDelete.parentNode.removeChild(elementtoDelete);
+        let elementtoDelete = document.getElementById(`item-${id}`); //delete the id
+        elementtoDelete.parentNode.removeChild(elementtoDelete); //remove child from parent
     };
     return btn;
 }
