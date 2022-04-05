@@ -21,15 +21,34 @@
                 </div><!--close column-->
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-end-date">Date to be completed</label>
+                        <label for="new-end-date">Completed by Date</label>
                         <input type="date" class="form-control" id="new-end-date">
                     </div>
                 </div><!--close second column-->
             </div> <!--close row-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Todo</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="What do you need?">
+                    </div>
+                </div>
+            </div><!--close second row-->
+            <div> <br>
+                <button class="btn btn-secondary" id="add">Add</button>
+            </div> <!-- add button-->
         </div> <!--close card body-->
     </div> <!--close card-->
 
 
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Todo</th>
+            <th>Date Created</th>
+            <th>Completed by Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
 
 
 
